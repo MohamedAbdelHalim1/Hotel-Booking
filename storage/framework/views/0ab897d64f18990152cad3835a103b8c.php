@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\tqnia\resources\views\backend\hotelCreate.blade.php ENDPATH**/ ?>
