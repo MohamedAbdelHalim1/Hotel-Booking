@@ -1,0 +1,10 @@
+###Very Important Notes 
+*authentication done via Laravel UI package
+*To check attempting of logging you have to follow this steps (in case you don't know Structure of Laravel UI package):
+   Auth/LoginController contain trait called 'AuthenticatesUsers'
+   You can find it in laravel itself : vendor->laravel->ui->auth-backend->AuthenticatesUsers.php 	
+*Gate For only admin permissions , Gate of for both admin and employee 
+*Policy for update status of room allowed for admin and employee (or you can use gate we made for admin and employee) and then use admin-only gate whenever you want employee to be unauthorized
+*Run 'npm install && npm run dev' to be able to use Laravel UI in local
+*Run 'php artisan db:seed --class=HotelStuffSeeder' to seed users table with 5 sample record 1 for admin role and 4 for employee role
+to be able to login to dashboard

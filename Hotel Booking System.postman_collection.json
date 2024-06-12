@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "ce73fb63-706a-41ac-baa1-7fb076cd999b",
+		"name": "Hotel Booking System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29412664",
+		"_collection_link": "https://lunar-resonance-42887.postman.co/workspace/7c0f68a4-8d04-4212-a7f4-94b1f1253be3/collection/29412664-ce73fb63-706a-41ac-baa1-7fb076cd999b?action=share&source=collection_link&creator=29412664"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"User\",\r\n    \"email\": \"User@example.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/a46b256b-ed38-4f82-9e79-cd334025e3a8/cmVnaXN0ZXIuUE5H\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"User@example.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/f4a3f644-85d1-4f79-8dc9-c80a2b524c96/bG9naW4uUE5H\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzE4MjEyNTY0LCJleHAiOjE3MTgyMTYxNjQsIm5iZiI6MTcxODIxMjU2NCwianRpIjoiZDNwbG1jZVhXajJ0UnRldSIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ETEhfbkGO3Rvv86Xf_QhlFUNXw1IaurPTSMKGg0SAMs"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/8c1495ae-da19-4e46-973f-4f41b06c8853/bG9nb3V0LlBORw==\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "get_hotels",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE4MjI2ODQyLCJleHAiOjE3MTgyMzA0NDIsIm5iZiI6MTcxODIyNjg0MiwianRpIjoidk5yMXJYTWdCY1hqWXR5MyIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.L_b8JmWpb87bCnWJEUnGktIlcsY36JdAGE9AGRNqWjA"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hotels",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hotels"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/8fe4475e-d1be-4bd0-a2df-5e057b38b3c0/Z2V0IGhvdGVsLlBORw==\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "search available rooms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE4MjI2ODQyLCJleHAiOjE3MTgyMzA0NDIsIm5iZiI6MTcxODIyNjg0MiwianRpIjoidk5yMXJYTWdCY1hqWXR5MyIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.L_b8JmWpb87bCnWJEUnGktIlcsY36JdAGE9AGRNqWjA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Hotel 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hotel/search",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hotel",
+						"search"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/487590b8-bf56-466a-b856-100e57d247c1/cm9vbSBzZWFyY2guUE5H\" alt=\"\">"
+			},
+			"response": []
+		},
+		{
+			"name": "booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE4MjE0MjQyLCJleHAiOjE3MTgyMTc4NDIsIm5iZiI6MTcxODIxNDI0MiwianRpIjoiMjdBVmlraWlKMHIyVFo1WCIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.opnieedG_UAPDluyE0UD3dDTu77KxHT3shzavgN2jXM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"start_date\": \"2024-06-12\",\r\n    \"end_date\": \"2024-06-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hotel/room/2/book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hotel",
+						"room",
+						"2",
+						"book"
+					]
+				},
+				"description": "<img src=\"https://content.pstmn.io/4780677d-ffe3-4aa4-bf26-aabc556666b8/Ym9va2luZy5QTkc=\" alt=\"\">"
+			},
+			"response": []
+		}
+	]
+}
